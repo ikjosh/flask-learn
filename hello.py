@@ -25,6 +25,10 @@ def forth(id):
 def fifth(id):
     return f'Id of this page is {id}'
 
+@app.route('/example')
+def example():
+    return render_template('index.html', number1=112500, number2=225200)
+
 # The code you provided is a common pattern in Python 
 # for running a Flask web application.
 if __name__ == '__main__':
