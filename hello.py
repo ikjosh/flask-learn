@@ -13,6 +13,18 @@ def hello_world():
 def second():
     return 'This is second page'
 
+@app.route('/third')
+def third():
+    return 'This is third page'
+
+@app.route('/forth/<string:id>')
+def forth(id):
+    return f'Id of this page is {id}'
+
+@app.route('/fifth/<int:id>')
+def fifth(id):
+    return f'Id of this page is {id}'
+
 # The code you provided is a common pattern in Python 
 # for running a Flask web application.
 if __name__ == '__main__':
