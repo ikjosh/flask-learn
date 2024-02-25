@@ -21,7 +21,7 @@ if __name__ == '__main__':
 # This is a common pattern in Python scripts to ensure that certain code 
 # is only executed when the script is run directly.
 
-    app.run(debug=True)
+    # app.run(debug=True)
     # app.run(debug=True, port=3003)
 
     # This line actually runs the Flask application. It tells Flask 
@@ -29,4 +29,4 @@ if __name__ == '__main__':
     # and to use port 80, which is the default port for HTTP traffic. 
     # By default, Flask runs on localhost (127.0.0.1) and a randomly chosen port, 
     # but specifying host='0.0.0.0' makes it accessible from other devices on the network.
-    # app.run(host='0.0.0.0', port=80)
+    app.run(host='0.0.0.0', port=80)
