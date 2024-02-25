@@ -29,6 +29,12 @@ def fifth(id):
 def example():
     return render_template('index.html', number1=112500, number2=225200)
 
+@app.route('/multiply')
+def multiply():
+    x=15
+    y=20
+    return render_template('body.html', num1=x, num2=y, multiply=x*y)
+
 # The code you provided is a common pattern in Python 
 # for running a Flask web application.
 if __name__ == '__main__':
